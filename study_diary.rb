@@ -19,11 +19,17 @@ def welcome
   'Bem-vindo ao Diário de Estudos, seu companheiro para estudar!'
 end
 
+INSERT = 1
+LIST = 2
+SEARCH = 3
+EXIT = 4
+
+
 def menu
-  puts "[1] Cadastrar um item para estudar"
-  puts "[2] Ver todos os itens cadastrados"
-  puts "[3] Buscar um item de estudo"
-  puts "[4] Sair"
+  puts "[#{INSERT}] Cadastrar um item para estudar"
+  puts "[#{LIST}] Ver todos os itens cadastrados"
+  puts "[#{SEARCH}] Buscar um item de estudo"
+  puts "[#{EXIT}] Sair"
   print 'Escolha uma opção: '
   gets.to_i
 end
